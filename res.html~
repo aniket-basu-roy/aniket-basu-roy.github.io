@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-11-26 Tue 10:28 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Aniket" />
+<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
+</head>
+<body>
+<div id="content">
+<div id="outline-container-org8e095cc" class="outline-2">
+<h2 id="org8e095cc">Research</h2>
+<div class="outline-text-2" id="text-org8e095cc">
+<p>
+<a href="https://scholar.google.com/citations?hl=en&amp;user=cryX_isAAAAJ">Google Scholar</a>, <a href="https://dblp.org/pid/157/4803.html">DBLP</a>
+</p>
+</div>
+
+
+<div id="outline-container-org9b6ccb8" class="outline-4">
+<h4 id="org9b6ccb8">Covering Simple Orthogonal Polygons with Rectangles</h4>
+<div class="outline-text-4" id="text-org9b6ccb8">
+<p>
+DOI: 10.48550/arXiv.2406.16209
+</p>
+</div>
+</div>
+
+<div id="outline-container-org93dd4cb" class="outline-4">
+<h4 id="org93dd4cb">On Range Summary Queries</h4>
+<div class="outline-text-4" id="text-org93dd4cb">
+</div>
+<ul class="org-ul">
+<li><a id="orgc2713c7"></a>with Peyman Afshani, Pingan Cheng, and Zhewei Wei<br />
+<div class="outline-text-5" id="text-orgc2713c7">
+<p>
+DOI: <a href="https://doi.org/10.4230/LIPIcs.ICALP.2023.7">https://doi.org/10.4230/LIPIcs.ICALP.2023.7</a> 
+</p>
+</div>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-orge2e1dae" class="outline-3">
+<h3 id="orge2e1dae"></h3>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Aniket</p>
+<p class="date">Created: 2024-11-26 Tue 10:28</p>
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 26.3 (<a href="https://orgmode.org">Org</a> mode 9.1.9)</p>
+<p class="validation"></p>
+</div>
+</body>
+</html>

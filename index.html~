@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-11-26 Tue 10:28 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Aniket" />
+<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
+</head>
+<body>
+<div id="content">
+<div id="outline-container-orgb51bc84" class="outline-2">
+<h2 id="orgb51bc84">Aniket Basu Roy</h2>
+<div class="outline-text-2" id="text-orgb51bc84">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><img src="moi.jpg" alt="moi.jpg" /></td>
+<td class="org-left">I am a Computer Science researcher affiliated to <a href="https://www.bits-pilani.ac.in/goa/">BITS Pilani Goa</a> as an Assistant Professor. Before this I was a postdoc in <a href="https://cs.au.dk/">Aarhus</a>, <a href="https://www.ibisc.univ-evry.fr/en/">Paris</a>, and <a href="https://www.lirmm.fr/">Montpellier</a>. Long ago, I defended my Ph.D. thesis at the <a href="https://www.iisc.ac.in/">Indian Institute of Science, Bangalore</a>.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div id="outline-container-org6ff2406" class="outline-3">
+<h3 id="org6ff2406">Research</h3>
+<div class="outline-text-3" id="text-org6ff2406">
+<p>
+My broad research interests lie Theoretical Computer Science and more specifically in Discrete and Computational Geometry.
+<a href="res.html#org8e095cc">List of Preprints/Publication</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge6bfa21" class="outline-3">
+<h3 id="orge6bfa21">Teaching</h3>
+<div class="outline-text-3" id="text-orge6bfa21">
+<p>
+I will be teaching CS F430 Approximation Algorithms from January 2025.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0c1cbc4" class="outline-3">
+<h3 id="org0c1cbc4">Miscellaneous</h3>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Aniket</p>
+<p class="date">Created: 2024-11-26 Tue 10:28</p>
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 26.3 (<a href="https://orgmode.org">Org</a> mode 9.1.9)</p>
+<p class="validation"></p>
+</div>
+</body>
+</html>
