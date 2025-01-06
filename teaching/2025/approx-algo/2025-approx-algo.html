@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-06 Mon 16:06 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CS F430 Approximation Algorithms</title>
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CS F430 Approximation Algorithms</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org0d0474e">When and Where</a></li>
+<li><a href="#org004f75f">Introduction</a></li>
+<li><a href="#orgf24ed7e">A Tentative List of Topics</a></li>
+<li><a href="#org5bea865">Evaluation and Grading Policy</a></li>
+<li><a href="#org3d34264">Consultation Hours</a></li>
+<li><a href="#org9a5d2db">Exam Schedule</a></li>
+<li><a href="#org34fb7b8">References</a></li>
+<li><a href="#org39864c7">Handout</a></li>
+<li><a href="#orgca105ac">Lecture Schedule</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0d0474e" class="outline-2">
+<h2 id="org0d0474e">When and Where</h2>
+<div class="outline-text-2" id="text-org0d0474e">
+<ul class="org-ul">
+<li>2025 Jan-Apr Term</li>
+<li>Time: T TH 11 am W 8 am</li>
+<li>Place: C402</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org004f75f" class="outline-2">
+<h2 id="org004f75f">Introduction</h2>
+<div class="outline-text-2" id="text-org004f75f">
+<blockquote>
+<p>
+<i>An old engineering slogan says, “Fast. Cheap. Reliable. Choose two.” Similarly, if P \(\neq\) NP, we can’t simultaneously have algorithms that (1) ﬁnd optimal solutions (2) in polynomial time (3) for any instance. At least one of these requirements must be relaxed in any approach to dealing with an NP-hard optimization problem.</i> <a href="#org34fb7b8">1</a>
+</p>
+</blockquote>
+
+<p>
+Approximation algorithms ensure that conditions <i>(2)</i> and <i>(3)</i> are satisfied while relaxing condition <i>(1)</i>.
+</p>
+</div>
+
+<div id="outline-container-org1c52c99" class="outline-3">
+<h3 id="org1c52c99">Learning Objectives</h3>
+<div class="outline-text-3" id="text-org1c52c99">
+<p>
+At the end of the course, students are expected to
+</p>
+<ol class="org-ol">
+<li>Be familiar with the basic paradigms of approximation algorithms.</li>
+<li>Design and analyze algorithms and lower bounds for optimization problems covered in the course. This includes the ability to <i>formally express</i> the proof of approximation factors and running times of the algorithms.</li>
+<li>Given an optimization problem, apply the tools and techniques covered in the course.</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf24ed7e" class="outline-2">
+<h2 id="orgf24ed7e">A Tentative List of Topics</h2>
+<div class="outline-text-2" id="text-orgf24ed7e">
+<ul class="org-ul">
+<li>Introduction: What and Why? [wk 1]</li>
+<li>A few typical approximation algorithms [wk 1&#x2013;2]</li>
+<li>A collection of approximation algorithmic paradigms [wk 3&#x2013;8]
+<ul class="org-ul">
+<li>Greedy Algorithms</li>
+<li>Local Search</li>
+<li>Dynamic Programming</li>
+<li>Linear Programming</li>
+<li>Semidefinite Programming</li>
+</ul></li>
+<li>Hardness of Approximation [wk 10&#x2013;12]
+<ul class="org-ul">
+<li>PCP, UGC, MaxCut, Coloring</li>
+</ul></li>
+<li>Geometric Approximation Algorithms [wk 13&#x2013;16]
+<ul class="org-ul">
+<li>Dynamic Programming</li>
+<li>Local Search</li>
+<li>Multiplicative Weight Updates</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5bea865" class="outline-2">
+<h2 id="org5bea865">Evaluation and Grading Policy</h2>
+<div class="outline-text-2" id="text-org5bea865">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">End term</td>
+<td class="org-right">35%</td>
+</tr>
+
+<tr>
+<td class="org-left">Mid term</td>
+<td class="org-right">30%</td>
+</tr>
+
+<tr>
+<td class="org-left">Assignments</td>
+<td class="org-right">15%</td>
+</tr>
+
+<tr>
+<td class="org-left">Seminar</td>
+<td class="org-right">15%</td>
+</tr>
+
+<tr>
+<td class="org-left">Scribe</td>
+<td class="org-right">05%</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div id="outline-container-orgbc4322b" class="outline-3">
+<h3 id="orgbc4322b">Seminar</h3>
+<div class="outline-text-3" id="text-orgbc4322b">
+<p>
+Every student is required to present a research paper from a given list of papers, which will be posted a month before the seminar.
+The seminar will be scheduled for the week 14-18/04, depending on the number of students crediting the course.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6675965" class="outline-3">
+<h3 id="org6675965">Scribe</h3>
+<div class="outline-text-3" id="text-org6675965">
+<p>
+Every lecture will be scribed by 1-2 students on a round-robin basis. The scribe should be LaTeXed and submitted within 7 days from the end of the lecture.
+Please have a look <a href="http://dspace.mit.edu/bitstream/handle/1721.1/49420/6-854JFall2001/OcwWeb/Electrical-Engineering-and-Computer-Science/6-854JFall2001/LectureNotes/index.htm">here</a> for sample scribes.
+<a href="https://web.iitd.ac.in/~bspanda/template.tex">Here</a> <a href="https://www.overleaf.com/project/677b6daf28b01f075e5679e7">are</a> <a href="https://www.csa.iisc.ac.in/~arindamkhan/courses/toolkit20/template/">a few</a> of the many scribe templates available on the web.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3d34264" class="outline-2">
+<h2 id="org3d34264">Consultation Hours</h2>
+<div class="outline-text-2" id="text-org3d34264">
+<ul class="org-ul">
+<li>Thursdays, 2-3 pm</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9a5d2db" class="outline-2">
+<h2 id="org9a5d2db">Exam Schedule</h2>
+<div class="outline-text-2" id="text-org9a5d2db">
+<ul class="org-ul">
+<li>Mid term: 06/03/25, 11:30 am &#x2013; 01:00 pm</li>
+<li>End term: 08/05/25 (AN)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org34fb7b8" class="outline-2">
+<h2 id="org34fb7b8">References</h2>
+<div class="outline-text-2" id="text-org34fb7b8">
+<ol class="org-ol">
+<li>Williamson, D. P., &amp; Shmoys, D. B. (2011). The design of approximation algorithms. Cambridge University Press.</li>
+<li>Vazirani, V. V. (2001). Approximation algorithms. Springer.</li>
+<li>Har-Peled, S. (2011). Geometric approximation algorithms (No. 173). American Mathematical Society.</li>
+<li>Gärtner, B., &amp; Matousek, J. (2012). Approximation algorithms and semidefinite programming. Springer.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org39864c7" class="outline-2">
+<h2 id="org39864c7">Handout</h2>
+<div class="outline-text-2" id="text-org39864c7">
+<ul class="org-ul">
+<li><a href="2025-csf430-approx-algo-handout.pdf">pdf</a> [06/01/2024]</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgca105ac" class="outline-2">
+<h2 id="orgca105ac">Lecture Schedule</h2>
+<div class="outline-text-2" id="text-orgca105ac">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Date</th>
+<th scope="col" class="org-left">Topic</th>
+<th scope="col" class="org-left">Ref</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">07/01</td>
+<td class="org-left">Administrivia</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">08/01</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">09/01</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">14/01</td>
+<td class="org-left">Holiday</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">15/01</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">16/01</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">21/01</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">22/01</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">23/01</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">28/01</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">29/01</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">30/01</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">04/02</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">05/02</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">06/02</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">11/02</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">12/02</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">13/02</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">18/02</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">19/02</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">20/02</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">25/02</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">26/02</td>
+<td class="org-left">Holiday</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">27/02</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">04/03</td>
+<td class="org-left">Exam</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">05/03</td>
+<td class="org-left">Exam</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">06/03</td>
+<td class="org-left">Exam</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">11/03</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">12/03</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">13/03</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">18/03</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">19/03</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">20/03</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">25/03</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">26/03</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">27/03</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">01/04</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">02/04</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">03/04</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">08/04</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">09/04</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">10/04</td>
+<td class="org-left">Holiday</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">15/04</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">16/04</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">17/04</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">22/04</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">23/04</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">24/04</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">29/04</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2025-01-06 Mon 16:06</p>
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 29.4 (<a href="https://orgmode.org">Org</a> mode 9.6.15)</p>
+</div>
+</body>
+</html>
