@@ -1,0 +1,145 @@
+#+title: CS F430 Approximation Algorithms
+#+options: toc:1
+
+* When and Where
+- 2025 Jan-Apr Term
+- Time: T TH 11 am W 8 am
+- Place: C-402
+
+* Introduction
+
+#+begin_quote
+/An old engineering slogan says, “Fast. Cheap. Reliable. Choose two.” Similarly, if P $\neq$ NP, we can’t simultaneously have algorithms that (1) ﬁnd optimal solutions (2) in polynomial time (3) for any instance. At least one of these requirements must be relaxed in any approach to dealing with an NP-hard optimization problem./ [[*References][1]]
+#+end_quote
+
+Approximation algorithms ensure that conditions /(2)/ and /(3)/ are satisfied while relaxing condition /(1)/.
+
+** Learning Objectives
+At the end of the course, students are expected to
+1. Be familiar with the basic paradigms of approximation algorithms.
+2. Design and analyze algorithms and lower bounds for optimization problems covered in the course. This includes the ability to /formally express/ the proof of approximation factors and running times of the algorithms.
+3. Given an optimization problem, apply the tools and techniques covered in the course.
+   
+* A Tentative List of Topics
+
+- Introduction: What and Why? [wk 1]
+- A few typical approximation algorithms [wk 1--2]
+- A collection of approximation algorithmic paradigms [wk 3--8]
+ - Greedy Algorithms
+ - Local Search
+ - Dynamic Programming
+ - Linear Programming
+ - Semidefinite Programming
+- Hardness of Approximation [wk 10--12]
+  - PCP, UGC, MaxCut, Coloring
+- Geometric Approximation Algorithms [wk 13--16]
+  - Dynamic Programming
+  - Local Search
+  - Multiplicative Weight Updates
+
+* Evaluation and Grading Policy
+
+| End term    | 35% |   
+| Mid term    | 30% |   
+| Assignments | 15% |   
+| Seminar     | 15% |   
+| Scribe      | 05% |   
+
+** Seminar
+Every student is required to present a research paper from a given list of papers, which will be posted a month before the seminar.
+The seminar will be scheduled for the week 14-18/04, depending on the number of students crediting the course.
+
+** Scribe
+Every lecture will be scribed by 1-2 students on a round-robin basis. The scribe should be LaTeXed and submitted within 7 days from the end of the lecture.
+Please have a look [[http://dspace.mit.edu/bitstream/handle/1721.1/49420/6-854JFall2001/OcwWeb/Electrical-Engineering-and-Computer-Science/6-854JFall2001/LectureNotes/index.htm][here]] for sample scribes.
+[[https://web.iitd.ac.in/~bspanda/template.tex][Here]] [[https://www.overleaf.com/project/677b6daf28b01f075e5679e7][are]] [[https://www.csa.iisc.ac.in/~arindamkhan/courses/toolkit20/template/][a few]] of the many scribe templates available on the web.
+
+* Consultation Hours
+- Thursdays, 2-3 pm, D-256
+
+* Exam Schedule
+- Mid term: 06/03/25, 11:30 am -- 01:00 pm
+- End term: 08/05/25 (AN) 
+
+* References
+1. Williamson, D. P., & Shmoys, D. B. (2011). The design of approximation algorithms. Cambridge University Press.
+2. Vazirani, V. V. (2001). Approximation algorithms. Springer.
+3. Har-Peled, S. (2011). Geometric approximation algorithms (No. 173). American Mathematical Society.
+4. Gärtner, B., & Matousek, J. (2012). Approximation algorithms and semidefinite programming. Springer.   
+
+* Handout
+- [[file:2025-csf430-approx-algo-handout.pdf][pdf]] [06/01/2024]
+   
+* Lecture Schedule
+
+| Date  | Topic         | Ref |
+|-------+---------------+-----|
+| 07/01 | Administrivia |     |
+| 08/01 |               |     |
+| 09/01 |               |     |
+|-------+---------------+-----|
+| 14/01 | Holiday       |     |
+| 15/01 |               |     |
+| 16/01 |               |     |
+|-------+---------------+-----|
+| 21/01 |               |     |
+| 22/01 |               |     |
+| 23/01 |               |     |
+|-------+---------------+-----|
+| 28/01 |               |     |
+| 29/01 |               |     |
+| 30/01 |               |     |
+|-------+---------------+-----|
+| 04/02 |               |     |
+| 05/02 |               |     |
+| 06/02 |               |     |
+|-------+---------------+-----|
+| 11/02 |               |     |
+| 12/02 |               |     |
+| 13/02 |               |     |
+|-------+---------------+-----|
+| 18/02 |               |     |
+| 19/02 |               |     |
+| 20/02 |               |     |
+|-------+---------------+-----|
+| 25/02 |               |     |
+| 26/02 | Holiday       |     |
+| 27/02 |               |     |
+|-------+---------------+-----|
+| 04/03 | Exam          |     |
+| 05/03 | Exam          |     |
+| 06/03 | Exam          |     |
+|-------+---------------+-----|
+| 11/03 |               |     |
+| 12/03 |               |     |
+| 13/03 |               |     |
+|-------+---------------+-----|
+| 18/03 |               |     |
+| 19/03 |               |     |
+| 20/03 |               |     |
+|-------+---------------+-----|
+| 25/03 |               |     |
+| 26/03 |               |     |
+| 27/03 |               |     |
+|-------+---------------+-----|
+| 01/04 |               |     |
+| 02/04 |               |     |
+| 03/04 |               |     |
+|-------+---------------+-----|
+| 08/04 |               |     |
+| 09/04 |               |     |
+| 10/04 | Holiday       |     |
+|-------+---------------+-----|
+| 15/04 |               |     |
+| 16/04 |               |     |
+| 17/04 |               |     |
+|-------+---------------+-----|
+| 22/04 |               |     |
+| 23/04 |               |     |
+| 24/04 |               |     |
+|-------+---------------+-----|
+| 29/04 |               |     |
+
+
+
+  
