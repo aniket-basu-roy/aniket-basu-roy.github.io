@@ -1,0 +1,9 @@
+** Insertion Sort on Random Arrays and Plotting the Running Times
+- We generate random arrays of varying sizes and output the time taken to  ~insertion_sort_times.csv~ file. [[file:src/insertion-sort.cpp][src]]
+- Next we plot the values in the ~insertion_sort_times.csv~ and try fitting a curve to it. [[file:src/plot_insertion_sort.py][src]]
+
+#+Begin_src :shell
+$ g++ insertion-sort.cpp  -o insertion-sort
+$ ./insertion-sort 
+$ python3 plot_insertion_sort.py
+#+End_src

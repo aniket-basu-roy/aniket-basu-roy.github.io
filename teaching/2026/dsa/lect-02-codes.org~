@@ -1,0 +1,5 @@
+* Generate random arrays of varying sizes and output to a .csv file
+- [[file:src/insertion-sort.cpp]]
+* Plot the values in the insertion_sort_times.csv and try fitting a curve to it
+- file:src/plot_insertion_sort.py
+  

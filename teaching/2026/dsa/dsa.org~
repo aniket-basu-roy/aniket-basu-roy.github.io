@@ -1,0 +1,99 @@
+#+title: CS F211 / MAC F242 Data Structures and Algorithms
+#+subtitle: Jan--May 2026
+#+options: toc:nil
+#+NAME:   fig:/img/google-calendar.png
+
+* When and Where
+** Lectures
+- Time: Mon Wed Fri 11:00 AM -- 11:50 AM
+- Place: LT1
+** Labs
+- Time: Fri 1:00 PM -- 3:00 PM
+- Place: CC 219 + TBA
+** Exams
+- Midsem: 10 March Tuesday, 11:30 AM -- 1:00 PM
+- Endsem: 06 May Wednesday, 2:00 PM -- 5:00 PM
+
+** Google Calendar
+
+Click [[https://calendar.google.com/calendar/u/1?cid=Y19hYTIyMWM4MDk5NDdjYzgwMDRjZWJlNGVjODZlMmMxNmIxMTcxYjZlMjVlNWEwZGQ2MTUwNzViYTcxM2ZhOGYwQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20][here]] to add the course calendar or scan the QR code below.
+
+[[file:img/google-calendar.png]]
+
+* People
+- Students
+  - CS Single degree 2nd year 2nd semester
+  - CS + X, Dual degree 3rd year 2nd semester
+  - Math and Computing, 2nd year 2nd semester
+- Staff
+  - Aniket Basu Roy (Instructor-in-Charge)
+  - Girija Deepak Limaye (Instructor)
+  - Siddharth Gupta (Lab Instructor)
+  - Teaching assistants (TBA)
+
+* Zulip Chat
+
+Click [[https://bitsgoa-dsa2026.zulipchat.com/join/otidqprqfjwbnzva2jfzdkvg/][here]] to join the course Zulip chat or scan the QR code below.
+
+file:img/zulip.png
+
+* Course Webpage
+
+Click [[https://aniket-basu-roy.github.io/teaching/2026/dsa/dsa.html][here]] to visit the course webpage or scan the QR code below.
+
+file:img/webpage.png
+
+* Introduction
+#+begin_quote
+"THE PROCESS of preparing programs for a digital computer is especially attractive, not only because it can be economically and scientifically rewarding, but also because it can be an aesthetic experience much like composing poetry or music."
+
+--- The Art of Computer Programming, Donald E. Knuth
+#+end_quote
+
+* A Tentative List of Topics
+1. Foundations
+   - What and Why
+   - Growth of Functions. Asymptotic Notations
+   - Recurrences
+   - Probabilistic Analysis and Randomized Algorithms
+2. Sorting and Order Statistics
+   - Heapsort
+   - Quicksort
+   - Lower Bounds to Comparision based Sorting. Linear time Sorting
+   - Medians and Order Statistics
+3. Data Structures
+   - Stacks, Queues, Deques, Linked Lists
+   - Hash Tables
+   - Binary Search Trees
+   - Height-Balanced Trees
+4. Graph Algorithms
+   - Representation of Graphs
+   - Graph Traversals
+   - Minimum Spanning Trees
+   - Single-Source Shortest Paths
+   - All-Pairs Shortest Paths
+   - Maximum Flow
+
+* Evaluation and Grading Policy
+
+| Endsem | 40% |
+| Midsem | 35% |
+| Labs   | 25% |
+
+
+* References
+1. Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2022). *Introduction to algorithms (4th ed.).* MIT Press.   
+2. Dasgupta, S., Papadimitriou, C. H., & Vazirani, U. V. (2006). *Algorithms.* McGraw-Hill. 
+3. Kleinberg, J., & Tardos, E. (2006). *Algorithm design.* Pearson/Addison-Wesley. 
+4. Knuth, D. E. (1997). *The Art of Computer Programming, Vol. 1: Fundamental Algorithms (3rd ed.).* Addison-Wesley.
+
+* Handout
+- To be uploaded after the approval of the DCA.
+   
+* Lecture Schedule
+
+*** Lecture 0 (07/01)
+- Administrivia, [[file:docs/dsa.pdf][slides]]
+
+*** Lecture 1 (09/01)
+- [[file:docs/lect-01.pdf][outline]], [[file:docs/lect-01-ppt.pdf][slides]]
