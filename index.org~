@@ -1,0 +1,34 @@
+* [[file:name.org][Aniket Basu Roy]]
+
+#+CAPTION: Picture Credits
+#+NAME:   fig:moi
+#+ATTR_HTML: :width 50px :rules all :frame border
+#+OPTIONS: ^:{}
+
+| [[file:moi.jpg]] [fn:PhotoCredit:Photo Credit: Andrea Lif Benediksdóttir] | I am a Computer Science researcher affiliated to [[https://www.bits-pilani.ac.in/goa/][BITS Pilani Goa]] as an Assistant Professor. Before this, I was a postdoc in [[https://cs.au.dk/][Aarhus]], [[https://www.ibisc.univ-evry.fr/en/][Paris]], and [[https://www.lirmm.fr/][Montpellier]]. I defended my Ph.D. thesis at the [[https://www.iisc.ac.in/][Indian Institute of Science, Bangalore]]. |                                                    
+
+** Research
+My broad research interests lie in Theoretical Computer Science, specifically in Discrete and Computational Geometry.
+
+[[file:research/res.org::*Research][List of Preprints/Publication]]
+
+** Teaching
+*** Aug-Nov 2025
+- AIMLZC322 Discrete Mathematics and Graph Theory
+- CS F222 Discrete Structures with [[https://guptasid.bitbucket.io/][Siddharth Gupta]] (Instructor-in-Charge)
+
+*** Jan-Apr 2025
+- +I am teaching [[file:teaching/2025/approx-algo/2025-approx-algo.org][CS F430 Approximation Algorithms]] from January 2025.+
+- I taught BITS F232 Foundations of Data Structures and Algorithms in the Jan-Apr term with [[https://www.bits-pilani.ac.in/goa/bharat-madhusudan-deshpande/][Bharat Deshpande]].
+  
+** Contact
+Office D-256 \\
+CS&IS Department \\
+BITS Pilani K K Birla Goa Campus \\
+NH 17B Bypass Road, Zuarinagar \\
+Goa 403726 \\
+India \\
+
+Phone: (+91) 832 258 0897 \\
+Email: aniketr AT goa.bits-pilani.ac.in | aniket.basu.roy AT gmail.com \\
+Or, fix a meeting [[https://calendar.google.com/calendar/appointments/schedules/AcZssZ1EUZ1479o6abQ4YrZN-ZoTYe1kRF70eTPy6e4iq2NOwomdyCLtAbuMk4pgeyf1s4okxgygLCNw?gv=true][here]]!
