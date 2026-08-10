@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2026-08-05 Wed 10:52 -->
+<!-- 2026-08-10 Mon 13:59 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>CS G526 Advanced Algorithms and Complexity</title>
@@ -20,33 +20,36 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org90a56d9">When and Where</a>
+<li><a href="#org183bb04">When and Where</a>
 <ul>
-<li><a href="#orgca979ef">Lectures</a></li>
-<li><a href="#org36c3c47">Exams</a></li>
-<li><a href="#org09f1479">Google Calendar</a></li>
+<li><a href="#orgd9852ea">Lectures</a></li>
+<li><a href="#org662b2d6">Exams</a></li>
+<li><a href="#orgec95a7e">Google Calendar</a></li>
 </ul>
 </li>
-<li><a href="#org55a53be">People</a></li>
-<li><a href="#org0dde6f4">Zulip Chat</a></li>
-<li><a href="#org509417a">Course Webpage</a></li>
-<li><a href="#org8555256">References</a></li>
-<li><a href="#org0699e05">A Tentative List of Topics</a>
+<li><a href="#orgdd77271">People</a></li>
+<li><a href="#org8af0f1f">Zulip Chat</a></li>
+<li><a href="#org675d928">Course Webpage</a></li>
+<li><a href="#org0d20b9d">References</a></li>
+<li><a href="#org5890a5b">A Tentative List of Topics</a>
 <ul>
-<li><a href="#orgb251912">Preliminaries</a></li>
-<li><a href="#orga7da5ce">Algorithmic Paradigms</a></li>
-<li><a href="#org91bdb41">Computational Complexity</a></li>
-<li><a href="#org58ea9b2">Advanced Topics</a></li>
+<li><a href="#orgc880b13">Preliminaries</a></li>
+<li><a href="#org6710144">Algorithmic Paradigms</a></li>
+<li><a href="#org163f4db">Computational Complexity</a></li>
+<li><a href="#org5c4b1d7">Advanced Topics</a></li>
 </ul>
 </li>
-<li><a href="#org3c25e15">Evaluation and Grading Policy</a></li>
-<li><a href="#org75326da">Continuous Evaluation Components</a></li>
-<li><a href="#org5d27835">Lecture Schedule</a>
+<li><a href="#orgb5ee6cc">Evaluation and Grading Policy</a></li>
+<li><a href="#orgdf3bc84">Continuous Evaluation Components</a></li>
+<li><a href="#org03d0423">Office Hours</a></li>
+<li><a href="#orgb8653ef">Lecture Schedule</a>
 <ul>
 <li>
 <ul>
-<li><a href="#org74955be">Lecture 0 (03/08)</a></li>
-<li><a href="#org22791e6">Lecture 1 (05/08)</a></li>
+<li><a href="#org3dc3d10">Lecture 0 (03/08)</a></li>
+<li><a href="#orgb5f6921">Lecture 1 (05/08)</a></li>
+<li><a href="#orgc8b0f98">Lecture 2 (07/08)</a></li>
+<li><a href="#org36ee4d3">Lecture 3 (10/08)</a></li>
 </ul>
 </li>
 </ul>
@@ -54,46 +57,46 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org90a56d9" class="outline-2">
-<h2 id="org90a56d9">When and Where</h2>
-<div class="outline-text-2" id="text-org90a56d9">
+<div id="outline-container-org183bb04" class="outline-2">
+<h2 id="org183bb04">When and Where</h2>
+<div class="outline-text-2" id="text-org183bb04">
 </div>
-<div id="outline-container-orgca979ef" class="outline-3">
-<h3 id="orgca979ef">Lectures</h3>
-<div class="outline-text-3" id="text-orgca979ef">
+<div id="outline-container-orgd9852ea" class="outline-3">
+<h3 id="orgd9852ea">Lectures</h3>
+<div class="outline-text-3" id="text-orgd9852ea">
 <ul class="org-ul">
 <li>Time: Mon Wed Fri 9:00 AM &#x2013; 9:50 AM</li>
 <li>Place: D103</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org36c3c47" class="outline-3">
-<h3 id="org36c3c47">Exams</h3>
-<div class="outline-text-3" id="text-org36c3c47">
+<div id="outline-container-org662b2d6" class="outline-3">
+<h3 id="org662b2d6">Exams</h3>
+<div class="outline-text-3" id="text-org662b2d6">
 <ul class="org-ul">
 <li>Midsem Exam: 07 October Wednesday, 9:30 AM &#x2013; 11:00 AM</li>
 <li>Comprehensive Exam: 04 December Friday, 10:00 AM &#x2013; 1:00 PM</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org09f1479" class="outline-3">
-<h3 id="org09f1479">Google Calendar</h3>
-<div class="outline-text-3" id="text-org09f1479">
+<div id="outline-container-orgec95a7e" class="outline-3">
+<h3 id="orgec95a7e">Google Calendar</h3>
+<div class="outline-text-3" id="text-orgec95a7e">
 <p>
 Click <a href="https://calendar.google.com/calendar/u/1?cid=Y182NzhlNmJlMjFiYWUwMzRmODUzYmFlNmQ5NjcyMWM4YTJkNGFmM2NhZjA2Njc3NzNmODcyYzdhODFlOTU1NzI4QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20">here</a> to add the course calendar or scan the QR code below.
 </p>
 
 
-<div id="orga103972" class="figure">
+<div id="org2de6468" class="figure">
 <p><img src="img/google-calendar.png" alt="google-calendar.png" />
 </p>
 </div>
 </div>
 </div>
 </div>
-<div id="outline-container-org55a53be" class="outline-2">
-<h2 id="org55a53be">People</h2>
-<div class="outline-text-2" id="text-org55a53be">
+<div id="outline-container-orgdd77271" class="outline-2">
+<h2 id="orgdd77271">People</h2>
+<div class="outline-text-2" id="text-orgdd77271">
 <ul class="org-ul">
 <li>Students
 <ul class="org-ul">
@@ -108,37 +111,37 @@ Click <a href="https://calendar.google.com/calendar/u/1?cid=Y182NzhlNmJlMjFiYWUw
 </ul>
 </div>
 </div>
-<div id="outline-container-org0dde6f4" class="outline-2">
-<h2 id="org0dde6f4">Zulip Chat</h2>
-<div class="outline-text-2" id="text-org0dde6f4">
+<div id="outline-container-org8af0f1f" class="outline-2">
+<h2 id="org8af0f1f">Zulip Chat</h2>
+<div class="outline-text-2" id="text-org8af0f1f">
 <p>
 Click <a href="https://bitsgoa-aac2026.zulipchat.com/join/sq5hvrtsrq35gxxw3vdqtvnf">here</a> to join the course Zulip chat or scan the QR code below.
 </p>
 
 
-<div id="org63975c8" class="figure">
+<div id="orgbc65978" class="figure">
 <p><img src="img/zulip.png" alt="zulip.png" />
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-org509417a" class="outline-2">
-<h2 id="org509417a">Course Webpage</h2>
-<div class="outline-text-2" id="text-org509417a">
+<div id="outline-container-org675d928" class="outline-2">
+<h2 id="org675d928">Course Webpage</h2>
+<div class="outline-text-2" id="text-org675d928">
 <p>
 Click <a href="https://aniket-basu-roy.github.io/teaching/2026/aac/aac.html">here</a> to visit the course webpage or scan the QR code below.
 </p>
 
 
-<div id="org705b71c" class="figure">
+<div id="orgcc9c726" class="figure">
 <p><img src="img/webpage.png" alt="webpage.png" />
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-org8555256" class="outline-2">
-<h2 id="org8555256">References</h2>
-<div class="outline-text-2" id="text-org8555256">
+<div id="outline-container-org0d20b9d" class="outline-2">
+<h2 id="org0d20b9d">References</h2>
+<div class="outline-text-2" id="text-org0d20b9d">
 <ol class="org-ol">
 <li>[KT] Kleinberg, J., &amp; Tardos, E. (2006). <b>Algorithm Design.</b> Pearson/Addison-Wesley.</li>
 <li>[DPV] Dasgupta, S., Papadimitriou, C. H., &amp; Vazirani, U. V. (2006). <b>Algorithms.</b> McGraw-Hill.</li>
@@ -147,13 +150,13 @@ Click <a href="https://aniket-basu-roy.github.io/teaching/2026/aac/aac.html">her
 </ol>
 </div>
 </div>
-<div id="outline-container-org0699e05" class="outline-2">
-<h2 id="org0699e05">A Tentative List of Topics</h2>
-<div class="outline-text-2" id="text-org0699e05">
+<div id="outline-container-org5890a5b" class="outline-2">
+<h2 id="org5890a5b">A Tentative List of Topics</h2>
+<div class="outline-text-2" id="text-org5890a5b">
 </div>
-<div id="outline-container-orgb251912" class="outline-3">
-<h3 id="orgb251912">Preliminaries</h3>
-<div class="outline-text-3" id="text-orgb251912">
+<div id="outline-container-orgc880b13" class="outline-3">
+<h3 id="orgc880b13">Preliminaries</h3>
+<div class="outline-text-3" id="text-orgc880b13">
 <ul class="org-ul">
 <li>Motivation and Warmup</li>
 <li>Growth of Functions. Asymptotic Notations</li>
@@ -161,9 +164,9 @@ Click <a href="https://aniket-basu-roy.github.io/teaching/2026/aac/aac.html">her
 </ul>
 </div>
 </div>
-<div id="outline-container-orga7da5ce" class="outline-3">
-<h3 id="orga7da5ce">Algorithmic Paradigms</h3>
-<div class="outline-text-3" id="text-orga7da5ce">
+<div id="outline-container-org6710144" class="outline-3">
+<h3 id="org6710144">Algorithmic Paradigms</h3>
+<div class="outline-text-3" id="text-org6710144">
 <ul class="org-ul">
 <li>Greedy Algorithms</li>
 <li>Divide and Conquer</li>
@@ -172,18 +175,18 @@ Click <a href="https://aniket-basu-roy.github.io/teaching/2026/aac/aac.html">her
 </ul>
 </div>
 </div>
-<div id="outline-container-org91bdb41" class="outline-3">
-<h3 id="org91bdb41">Computational Complexity</h3>
-<div class="outline-text-3" id="text-org91bdb41">
+<div id="outline-container-org163f4db" class="outline-3">
+<h3 id="org163f4db">Computational Complexity</h3>
+<div class="outline-text-3" id="text-org163f4db">
 <ul class="org-ul">
 <li>Complexity Classes P, NP, PSPACE</li>
 <li>Reductions</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org58ea9b2" class="outline-3">
-<h3 id="org58ea9b2">Advanced Topics</h3>
-<div class="outline-text-3" id="text-org58ea9b2">
+<div id="outline-container-org5c4b1d7" class="outline-3">
+<h3 id="org5c4b1d7">Advanced Topics</h3>
+<div class="outline-text-3" id="text-org5c4b1d7">
 <ul class="org-ul">
 <li>Approximation Algorithms</li>
 <li>Randomized Algorithms</li>
@@ -193,9 +196,9 @@ Click <a href="https://aniket-basu-roy.github.io/teaching/2026/aac/aac.html">her
 </div>
 </div>
 </div>
-<div id="outline-container-org3c25e15" class="outline-2">
-<h2 id="org3c25e15">Evaluation and Grading Policy</h2>
-<div class="outline-text-2" id="text-org3c25e15">
+<div id="outline-container-orgb5ee6cc" class="outline-2">
+<h2 id="orgb5ee6cc">Evaluation and Grading Policy</h2>
+<div class="outline-text-2" id="text-orgb5ee6cc">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -223,9 +226,9 @@ Click <a href="https://aniket-basu-roy.github.io/teaching/2026/aac/aac.html">her
 </table>
 </div>
 </div>
-<div id="outline-container-org75326da" class="outline-2">
-<h2 id="org75326da">Continuous Evaluation Components</h2>
-<div class="outline-text-2" id="text-org75326da">
+<div id="outline-container-orgdf3bc84" class="outline-2">
+<h2 id="orgdf3bc84">Continuous Evaluation Components</h2>
+<div class="outline-text-2" id="text-orgdf3bc84">
 <ul class="org-ul">
 <li>Problem Sets (4x)</li>
 <li>Paper Reading, Report Writing, Presenting</li>
@@ -233,31 +236,56 @@ Click <a href="https://aniket-basu-roy.github.io/teaching/2026/aac/aac.html">her
 </ul>
 </div>
 </div>
-<div id="outline-container-org5d27835" class="outline-2">
-<h2 id="org5d27835">Lecture Schedule</h2>
-<div class="outline-text-2" id="text-org5d27835">
+<div id="outline-container-org03d0423" class="outline-2">
+<h2 id="org03d0423">Office Hours</h2>
+<div class="outline-text-2" id="text-org03d0423">
+<p>
+When: Fridays, 11:00 AM &#x2013; 12:00 noon
+Where: D256
+</p>
 </div>
-<div id="outline-container-org74955be" class="outline-4">
-<h4 id="org74955be">Lecture 0 (03/08)</h4>
-<div class="outline-text-4" id="text-org74955be">
+</div>
+<div id="outline-container-orgb8653ef" class="outline-2">
+<h2 id="orgb8653ef">Lecture Schedule</h2>
+<div class="outline-text-2" id="text-orgb8653ef">
+</div>
+<div id="outline-container-org3dc3d10" class="outline-4">
+<h4 id="org3dc3d10">Lecture 0 (03/08)</h4>
+<div class="outline-text-4" id="text-org3dc3d10">
 <ul class="org-ul">
 <li>Administrivia, <a href="docs/lect-00-ppt.pdf">slides</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org22791e6" class="outline-4">
-<h4 id="org22791e6">Lecture 1 (05/08)</h4>
-<div class="outline-text-4" id="text-org22791e6">
+<div id="outline-container-orgb5f6921" class="outline-4">
+<h4 id="orgb5f6921">Lecture 1 (05/08)</h4>
+<div class="outline-text-4" id="text-orgb5f6921">
 <ul class="org-ul">
 <li>Stable Matching, KT 1.1</li>
 <li>Scribe <a href="docs/scribe-lec01.pdf">pdf</a>, <a href="https://www.overleaf.com/read/fhfrmdxjwwmd#cde2d1">overleaf</a></li>
 </ul>
 </div>
 </div>
+<div id="outline-container-orgc8b0f98" class="outline-4">
+<h4 id="orgc8b0f98">Lecture 2 (07/08)</h4>
+<div class="outline-text-4" id="text-orgc8b0f98">
+<ul class="org-ul">
+<li>Asymptotic Notations, Review of Graph Theory Basics</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org36ee4d3" class="outline-4">
+<h4 id="org36ee4d3">Lecture 3 (10/08)</h4>
+<div class="outline-text-4" id="text-org36ee4d3">
+<ul class="org-ul">
+<li>Job Scheduling, KT 4.1</li>
+</ul>
+</div>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2026-08-05 Wed 10:52</p>
+<p class="date">Created: 2026-08-10 Mon 13:59</p>
 <p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 30.2 (<a href="https://orgmode.org">Org</a> mode 9.7.11)</p>
 </div>
 </body>
